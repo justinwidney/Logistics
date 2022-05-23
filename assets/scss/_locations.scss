@@ -1,0 +1,149 @@
+#map{  
+    
+    height: 80vh;
+    width: 100%;
+    /* The height is 400 pixels */
+
+    //overflow:visible !important;
+  }
+
+
+
+  #locations-about{
+    
+    
+    font-family: $font_2;
+
+    //background-color: $blue_dark;
+
+    .intro-text{
+
+        margin-top: 20vh;
+        display: inline-block;
+        text-align: left;
+        font-size: 4vw;
+        font-weight: 900;
+        color: white;
+        line-height: 9vh;
+        //letter-spacing: -0.3vw;
+        text-transform: uppercase;
+        z-index: 2;
+
+        em{
+            color: $green_light;
+            font-style: normal;
+        }
+    }
+
+    
+    .w-bg{
+        background-color: #F8F8F8;
+        z-index: 1;
+    }
+    .bd-bg{
+        background-color: $blue_dark;
+    }
+    
+    .no-margin{
+        margin: -1px !important;
+    }
+
+    .intro-arrow{
+        position: relative;
+        top: 50%;
+        p{
+            color: white;
+            font-family: $font_8;
+        }
+        i{
+            color: white;
+            font-size: 2vw;
+        }
+    }
+
+ 
+
+
+.border-leftx {
+      border-left: 1px solid #B6BAE0 !important;
+      height: auto !important;
+      
+}
+
+.background-image-entities {
+    background-color: $blue_dark;
+    //height: 140vh;
+    background-repeat:no-repeat ;
+    width: 100%;
+    background-size: cover;
+
+    
+}
+
+.panel-body{
+
+    button{
+        border-radius: 0px;
+        padding: 0px;
+    }
+
+.list-group{
+    max-height: 80vh;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+
+
+    
+
+    p{
+        font-family: $font_8;
+        text-align: left;
+        font-size: calc(10px + 0.1vw);
+    }
+
+    .active{
+        background-color: #e9eaeb;
+        border: none;
+    }
+
+    .list-group-item-action{
+        cursor: pointer;
+    }
+
+
+}
+
+}
+
+.address-card{
+
+    padding-left: calc(10px + 1.5vw);
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background-color: white;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.68); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.68);
+
+    p{
+        font-family: $font_8;
+        color: black;
+        
+    }
+    ul{
+        ol{
+            font-family: $font_8;
+            text-align: left;
+            padding-left: 0px;
+
+        }
+    }
+
+    img{
+        width: 100%;
+    }
+}
+
+}

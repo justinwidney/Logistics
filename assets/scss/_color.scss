@@ -1,0 +1,146 @@
+
+/*-------------   Color Variable  --------------*/
+
+//Colors
+	$white: #ffffff;
+	$black: #16161a;
+	$gray:#f7f7fd;
+	$green: #8CB369;
+	$yellow: #F4E285;
+	$orange: #F4A259;
+	$red : #BC4B51;
+	$purple : #4b56bc;
+
+	$blue_dark : #080D27;
+	$blue_darker : #070b21;
+	$blue_light : #003D7D;
+	$green_dark : #006F5F;
+	$green_light : #0AB89F;
+	$green_lighter: #00E7C5;
+	$black_normal : #13171B;
+
+// font-color
+	$heading-color:#3b3a3f;
+	$heading_color2: #4a4b4d;
+	$heading_p_color: #3E3D3D;
+
+
+	$box_color: #121111;
+
+//Theme color
+	$theme-color: #75CEDD;
+	$theme-color2: #4a4b4d;
+	$theme-color3: #f27420;
+	$theme-color4: #7596dd;
+	
+	$gray-bg: #f8f8f8;
+
+	$theme-main-color: #003D7D;
+
+//button color 
+
+
+
+
+// Body Font
+	$body-text-color: #212025;
+	$hr-border-color:#eceff8;
+
+// btn and Section color
+	$btn_bg: #75CEDD;
+
+// Section Bg
+	$section_bg1: #454545;
+
+
+
+
+
+.white-bg{
+	background: #ffffff;
+}
+
+.gray-bg{
+	background: #f8f8f8;
+}
+
+	$gray-color: #bebebe;
+	$gray-color-2: #bdbdbd;
+	$gray-color3:#5c5c5c;
+	$white_color:#fff;
+
+
+// font color
+	$font_color1: #10285d;
+
+	$border_color: #fdcb9e;
+	$footer_bg: #303030;
+	$sidebar_bg: #fbf9ff;
+
+
+
+
+// bg
+	$brand-bg: #f1f4fa;
+	$testimonial-bg:#f9fafc;
+
+
+// Soft color
+	$black-soft:#7e7e7e;
+
+// Section Bg color
+	$blue-bg1:#00163e;
+
+
+
+
+
+
+/*-- Background color---*/
+
+.gray-bg {
+	background: $gray;
+}
+.white-bg {
+	background:$white;
+}
+.black-bg {
+	background: $black;
+}
+.theme-bg {
+	background:$theme-color;
+}
+
+
+
+/*--- color------*/
+.white-color {
+	color: $white;
+}
+.black-color {
+	color: $black;
+}
+.theme-color {
+	color: $theme-color;
+}
+
+.red-color{
+	background-color: $red 
+}
+
+.green-color{
+	background-color: $green 
+}
+
+.yellow-color{
+	background-color: $yellow
+}
+
+.orange-color{
+	background-color: $orange
+}
+.purple-color{
+	background-color: $purple
+}
+
+
