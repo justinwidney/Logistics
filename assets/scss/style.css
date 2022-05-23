@@ -51,7 +51,7 @@
   background: #16161a; }
 
 .theme-bg {
-  background: #75CEDD; }
+  background: #003D7D; }
 
 /*--- color------*/
 .white-color {
@@ -61,7 +61,7 @@
   color: #16161a; }
 
 .theme-color {
-  color: #75CEDD; }
+  color: #003D7D; }
 
 .red-color {
   background-color: #BC4B51; }
@@ -1525,7 +1525,7 @@ hr {
   position: relative;
   border-style: solid;
   border-width: 1px;
-  border-top-color: #75CEDD;
+  border-top-color: #003D7D;
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-right-color: transparent;
@@ -1845,8 +1845,8 @@ hr {
 .btnBook {
   padding: 10px 15px;
   background: inherit;
-  border: 1px solid #75CEDD;
-  color: #75CEDD;
+  border: 1px solid #003D7D;
+  color: #003D7D;
   font-size: 16px;
   cursor: pointer;
   letter-spacing: .5px;
@@ -1970,7 +1970,7 @@ hr {
   background: #16161a; }
 
 .theme-bg {
-  background: #75CEDD; }
+  background: #003D7D; }
 
 /*--- color------*/
 .white-color {
@@ -1980,7 +1980,7 @@ hr {
   color: #16161a; }
 
 .theme-color {
-  color: #75CEDD; }
+  color: #003D7D; }
 
 .red-color {
   background-color: #BC4B51; }
@@ -2017,8 +2017,8 @@ header {
   background-color: none;
   opacity: 95%;
   padding: 0px 100px; }
-  .header-area .main-header .logo {
-    width: 125px; }
+  .header-area .main-header .logo img {
+    width: 100%; }
   .header-area .main-header .Title-Logo {
     display: inline-block; }
     .header-area .main-header .Title-Logo h3 {
@@ -2087,7 +2087,7 @@ header {
         .header-area .main-header .main-menu ul li a {
           margin: 0 10px; } }
     .header-area .main-header .main-menu ul li:hover > a {
-      color: #75CEDD; }
+      color: #003D7D; }
   .header-area .main-header .main-menu ul ul.submenu {
     position: absolute;
     width: 170px;
@@ -2112,7 +2112,7 @@ header {
         text-transform: capitalize;
         margin: 0; }
         .header-area .main-header .main-menu ul ul.submenu > li > a:hover {
-          color: #75CEDD;
+          color: #003D7D;
           background: none; }
         @media (min-width: 992px) and (max-width: 1280px) {
           .header-area .main-header .main-menu ul ul.submenu > li > a {
@@ -2149,8 +2149,8 @@ header {
     flex-direction: column; }
   .header-area2 .main-header {
     background-color: transparent; }
-    .header-area2 .main-header .logo {
-      width: 250px; }
+    .header-area2 .main-header .logo img {
+      width: 100%; }
     .header-area2 .main-header .rect-contact {
       border: 1px solid #003D7D; }
       .header-area2 .main-header .rect-contact i {
@@ -2229,7 +2229,7 @@ header {
       text-transform: uppercase;
       position: relative; }
     .header-area2 .main-header .main-menu:hover > a {
-      color: #75CEDD; }
+      color: #003D7D; }
     .header-area2 .main-header .main-menu ul.submenu {
       position: absolute;
       width: 170px;
@@ -2262,7 +2262,7 @@ header {
               font-size: 14px;
               padding: 3px 5px !important; } }
           .header-area2 .main-header .main-menu ul.submenu > li > a:hover {
-            color: #75CEDD;
+            color: #003D7D;
             background: none; }
 
 .header-area .main-menu ul ul.submenu > li > a:hover {
@@ -2323,12 +2323,12 @@ header {
     .mobile_menu .slicknav_menu .slicknav_btn {
       top: -30px; }
       .mobile_menu .slicknav_menu .slicknav_btn .slicknav_icon-bar {
-        background-color: #75CEDD !important; }
+        background-color: #003D7D !important; }
     .mobile_menu .slicknav_menu .slicknav_nav {
       margin-top: 4px !important; }
       .mobile_menu .slicknav_menu .slicknav_nav a:hover {
         background: transparent;
-        color: #75CEDD; }
+        color: #003D7D; }
       .mobile_menu .slicknav_menu .slicknav_nav a {
         font-size: 15px;
         padding: 7px 10px; }
@@ -3423,20 +3423,63 @@ header {
     height: inherit; }
 
 #landtran-companies {
-  background-image: url(../img/hero/josiah-farrow-ucuOscdCaO4-unsplash.jpg);
+  background-image: url(../img/hero/nT4k2JDtwTQ.png);
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
-  padding-bottom: calc(50px + 10vh); }
+  z-index: 5;
+  margin-bottom: calc(-50px + -5vh); }
+  #landtran-companies .padding-top {
+    padding-top: 25px; }
+  #landtran-companies .find-out-dark-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003D7D;
+    width: 100%;
+    height: 6vh;
+    line-height: 50px;
+    border: #003D7D 0px solid;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0px;
+    padding: 25px 50px; }
+    @media (max-width: 991px) {
+      #landtran-companies .find-out-dark-2 {
+        width: calc(30px + 50vw);
+        height: calc(12px + 3vh);
+        color: #13171B;
+        background-color: white; } }
+    #landtran-companies .find-out-dark-2 span {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 30px; }
   #landtran-companies .transparent-bg {
     position: relative;
     top: calc(25px + 3vh);
-    background: rgba(0, 0, 0, 0.5);
     padding: 35px 0px; }
     #landtran-companies .transparent-bg h1 {
       color: white;
       font-family: "Bebas Neue", sans-serif;
       font-size: calc(12px + 2vw); }
+    #landtran-companies .transparent-bg h4 {
+      font-family: "Source Sans Pro", sans-serif;
+      color: white;
+      padding-bottom: 25px; }
+    #landtran-companies .transparent-bg p {
+      color: white;
+      font-family: "Bebas Neue", sans-serif;
+      font-size: calc(12px + 0.5vw); }
+  #landtran-companies i {
+    color: #003D7D;
+    background-color: #ffffff;
+    padding: 0px;
+    padding-right: 15px;
+    border-radius: 0%;
+    background-clip: content-box;
+    font-size: 25px; }
   #landtran-companies .companies {
     margin-top: calc(50px + 7vh); }
     @media (min-width: 1280px) {
@@ -3561,6 +3604,29 @@ header {
     position: relative;
     padding-left: calc(20px + 2vw);
     padding-right: calc(20px + 2vw); }
+  #landtran-companies .three-services {
+    position: relative;
+    z-index: 5; }
+    #landtran-companies .three-services .box-top {
+      background-color: #003D7D;
+      border-radius: 15px 15px 0px 0px; }
+    #landtran-companies .three-services h1 {
+      font-size: calc(12px + 0.3vw);
+      margin: auto;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+    #landtran-companies .three-services .box-bottom {
+      background-color: white; }
+      #landtran-companies .three-services .box-bottom img {
+        width: 100%;
+        height: 10vw;
+        padding: 10px; }
+    #landtran-companies .three-services .three-services-padding {
+      margin-right: 25px;
+      margin-left: 5px; }
+    #landtran-companies .three-services .box-shadow-services {
+      -webkit-box-shadow: 0px 4px 8px 2px #000000;
+      box-shadow: 0px 4px 8px 2px #000000; }
 
 .border-leftx {
   border-left: 1px thick solid #ffffff !important;
@@ -3645,7 +3711,11 @@ header {
 
 #career-page {
   border-left: #14397F 50px solid;
-  border-bottom: #14397F 50px solid; }
+  border-bottom: #14397F 50px solid;
+  background-color: white;
+  position: relative;
+  z-index: 4;
+  padding-top: 25px; }
   #career-page img {
     object-fit: cover;
     width: 100%; }
@@ -3670,9 +3740,9 @@ header {
     font-size: 35px;
     text-transform: capitalize; }
   #career-page p {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     color: #262626;
-    font-size: 16px;
+    font-size: calc(10px + 0.5vw);
     padding-bottom: 10px;
     text-transform: uppercase;
     line-height: 42px; }
@@ -3739,7 +3809,7 @@ header {
       line-height: 1.2;
       font-weight: 500;
       margin-bottom: 39px;
-      color: #75CEDD;
+      color: #003D7D;
       margin-bottom: 44px;
       display: inline-block; }
       @media (max-width: 575px) {
@@ -4054,11 +4124,12 @@ header {
   #intro-about .border-leftx {
     border-left: 1px solid #B6BAE0 !important; }
   #intro-about .background-image-entities {
-    background-color: #080D27;
-    height: 15vh;
+    background-image: url(/assets/img/gallery/logistics_overhead.jpg);
+    height: 75vh;
     background-repeat: no-repeat;
     width: 100%;
-    background-size: cover; }
+    background-size: cover;
+    background-position-y: -10vh; }
     @media (max-width: 991px) {
       #intro-about .background-image-entities {
         height: auto; } }
@@ -4197,101 +4268,51 @@ iframe {
   #our-values .row-split {
     padding-top: 5vh; }
 
-#timeline .padding-top {
-  padding-top: 10vh; }
-#timeline .padding-bot {
-  padding-bottom: 5vh; }
-#timeline .intro h1 {
+#about-us .history {
+  padding-bottom: 15vh; }
+#about-us .intro-line {
+  font-size: 16px;
+  padding-top: 15vh;
+  padding-left: 5px; }
+  #about-us .intro-line span {
+    padding-left: 10px; }
+#about-us .intro-line::before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  border-bottom: 1px solid #003D7D;
+  width: 3rem;
+  transform: translateY(-0.4rem);
+  top: 50%; }
+#about-us h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-style: italic;
-  font-size: 45px; }
-#timeline .intro p {
+  font-size: calc(16 + 1vw);
+  padding-bottom: 15px;
+  line-height: 55px; }
+  #about-us h1 span {
+    color: #003D7D; }
+#about-us p {
+  font-family: "Source Sans Pro", sans-serif;
   color: #121111;
-  font-weight: 400;
-  font-size: calc(10px + 0.2vw);
-  font-family: "Montserrat", sans-serif;
-  text-align: left; }
-#timeline .intro .img-float-1 {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-left: auto;
-  margin-right: auto;
-  top: 5%;
-  width: calc(50px + 18vw); }
-#timeline .intro .img-float-2 {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-left: auto;
-  margin-right: auto;
-  top: 35%;
-  width: calc(59px + 25vw); }
-#timeline .intro .img-float-3 {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-left: auto;
-  margin-right: auto; }
-#timeline .mid-section h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-  font-size: 45px; }
-#timeline .mid-section p {
-  color: 121111;
-  font-weight: 400;
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  text-align: left; }
-#timeline .mid-section .img-float-1 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 40%;
-  width: 12vw; }
-#timeline .mid-section .img-float-2 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 15%;
-  width: 20vw; }
-#timeline .mid-section .img-float-3 {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-left: auto;
-  margin-right: auto; }
-#timeline .last-section h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-  font-size: 45px; }
-#timeline .last-section p {
-  color: 121111;
-  font-weight: 400;
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  text-align: left; }
-#timeline .last-section .img-float-1 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 10%;
-  width: 12vw; }
-#timeline .last-section .img-float-2 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 10%;
-  width: 20vw; }
-#timeline .last-section .img-float-3 {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-left: auto;
-  margin-right: auto; }
+  font-size: calc(10px + 0.2vw); }
+#about-us img {
+  height: 100%;
+  width: 100%; }
+#about-us .header-text {
+  padding-bottom: 10vh; }
+#about-us .three-facts {
+  padding-bottom: 25vh; }
+  #about-us .three-facts h1 {
+    font-family: "Bebas Neue", sans-serif;
+    padding-bottom: 0px; }
+  #about-us .three-facts p {
+    font-family: "Roboto", sans-serif;
+    font-size: calc(10px + 0.2vw);
+    color: black; }
+  #about-us .three-facts i {
+    font-size: 5vw;
+    color: #003D7D; }
 
 .gallery-area .gallery-box .single-gallery {
   overflow: hidden;
@@ -5087,9 +5108,9 @@ footer {
     line-height: 2;
     margin-bottom: 12px; }
     .footer-area .footer-bottom .footer-copy-right p i {
-      color: #75CEDD; }
+      color: #003D7D; }
     .footer-area .footer-bottom .footer-copy-right p a {
-      color: #75CEDD; }
+      color: #003D7D; }
 .footer-area .insta-feed {
   padding-top: 5px;
   display: flex;
@@ -6154,146 +6175,6 @@ footer {
   #safety-intro-picture .full-height {
     height: inherit; }
 
-#landtran-companies {
-  background-image: url(../img/hero/josiah-farrow-ucuOscdCaO4-unsplash.jpg);
-  background-repeat: no-repeat;
-  width: 100%;
-  background-size: cover;
-  padding-bottom: calc(50px + 10vh); }
-  #landtran-companies .transparent-bg {
-    position: relative;
-    top: calc(25px + 3vh);
-    background: rgba(0, 0, 0, 0.5);
-    padding: 35px 0px; }
-    #landtran-companies .transparent-bg h1 {
-      color: white;
-      font-family: "Bebas Neue", sans-serif;
-      font-size: calc(12px + 2vw); }
-  #landtran-companies .companies {
-    margin-top: calc(50px + 7vh); }
-    @media (min-width: 1280px) {
-      #landtran-companies .companies .mini {
-        display: none; } }
-    #landtran-companies .companies .company-column {
-      padding-bottom: calc(5px + 2vh);
-      background-color: white;
-      border-radius: 15px;
-      -webkit-box-shadow: 1px 2px 6px 3px rgba(0, 0, 0, 0.5);
-      box-shadow: 1px 2px 6px 3px rgba(0, 0, 0, 0.5); }
-      @media only screen and (min-width: 1600px) {
-        #landtran-companies .companies .company-column {
-          padding: 25px; } }
-      #landtran-companies .companies .company-column h3 {
-        font-size: calc(10px + 0.3vw);
-        font-family: "Bebas Neue", sans-serif;
-        margin-top: auto;
-        margin-bottom: auto;
-        padding-left: 15px; }
-      #landtran-companies .companies .company-column .point {
-        padding-bottom: calc(10px + 1vh); }
-      #landtran-companies .companies .company-column i {
-        font-size: calc(14px + 0.5vw); }
-      #landtran-companies .companies .company-column .padding-left {
-        position: relative; }
-        @media only screen and (min-width: 1600px) {
-          #landtran-companies .companies .company-column .padding-left {
-            left: 10%; } }
-    #landtran-companies .companies img {
-      object-fit: contain;
-      width: 100%;
-      height: 100px;
-      padding: 15px; }
-    #landtran-companies .companies .find-out-dark-2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #14397F;
-      width: calc(50px + 7vw);
-      height: 5vh;
-      line-height: 50px;
-      padding: 0px 25px;
-      border: white 0px solid;
-      margin: auto;
-      color: white;
-      position: relative;
-      font-family: "Montserrat", sans-serif;
-      cursor: pointer;
-      overflow: hidden;
-      -webkit-box-shadow: inset 0px 0px 0px 1px white;
-      -moz-box-shadow: inset 0px 0px 0px 1px white;
-      box-shadow: inset 0px 0px 0px 1px white;
-      transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4); }
-      @media (max-width: 991px) {
-        #landtran-companies .companies .find-out-dark-2 {
-          width: calc(30px + 20vw);
-          height: calc(12px + 4vh); } }
-      #landtran-companies .companies .find-out-dark-2 i {
-        font-size: 35px; }
-      #landtran-companies .companies .find-out-dark-2 span,
-      #landtran-companies .companies .find-out-dark-2 .icon {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute; }
-      #landtran-companies .companies .find-out-dark-2 .icon {
-        opacity: 0; }
-      #landtran-companies .companies .find-out-dark-2 span {
-        width: 72%;
-        line-height: inherit;
-        font-size: calc(10px + 1vw);
-        left: 10%;
-        font-family: "Bebas Neue", sans-serif; }
-        @media (max-width: 991px) {
-          #landtran-companies .companies .find-out-dark-2 span {
-            font-size: calc(10px + 0.1vw); } }
-      #landtran-companies .companies .find-out-dark-2 .icon {
-        width: 28%;
-        right: 0;
-        transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4); }
-        #landtran-companies .companies .find-out-dark-2 .icon .fa {
-          font-size: 30px;
-          vertical-align: middle;
-          transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4), height 0.25s ease; }
-        #landtran-companies .companies .find-out-dark-2 .icon .fa-caret-right {
-          height: 36px; }
-    #landtran-companies .companies .cc2 i {
-      color: #6E2C2C; }
-    #landtran-companies .companies .cc2 .find-out-dark-2 {
-      background-color: #6E2C2C; }
-    #landtran-companies .companies .cc3 i {
-      color: #006F5F; }
-    #landtran-companies .companies .cc3 .find-out-dark-2 {
-      background-color: #006F5F; }
-    #landtran-companies .companies .cc4 i {
-      color: #5F7E23; }
-    #landtran-companies .companies .cc4 .find-out-dark-2 {
-      background-color: #5F7E23; }
-    #landtran-companies .companies .cc5 i {
-      color: #EC0001; }
-    #landtran-companies .companies .cc5 .find-out-dark-2 {
-      background-color: #EC0001; }
-    #landtran-companies .companies .cc1:hover {
-      animation: pulse 1s infinite;
-      animation-timing-function: linear; }
-    #landtran-companies .companies .cc2:hover {
-      animation: pulse 1s infinite;
-      animation-timing-function: linear; }
-    #landtran-companies .companies .cc3:hover {
-      animation: pulse 1s infinite;
-      animation-timing-function: linear; }
-    #landtran-companies .companies .cc4:hover {
-      animation: pulse 1s infinite;
-      animation-timing-function: linear; }
-    #landtran-companies .companies .cc5:hover {
-      animation: pulse 1s infinite;
-      animation-timing-function: linear; }
-  #landtran-companies .padding-full {
-    top: 15%;
-    position: relative;
-    padding-left: calc(20px + 2vw);
-    padding-right: calc(20px + 2vw); }
-
 .border-leftx {
   border-left: 1px thick solid #ffffff !important;
   height: 120vh; }
@@ -6341,70 +6222,6 @@ footer {
     .slider-height3 {
       min-height: 260px; } }
 
-#career-page {
-  border-left: #14397F 50px solid;
-  border-bottom: #14397F 50px solid; }
-  #career-page img {
-    object-fit: cover;
-    width: 100%; }
-  #career-page h1 {
-    font-family: "Bebas Neue", sans-serif;
-    color: #003D7D;
-    font-size: calc(40px);
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 0px;
-    padding-bottom: 10px;
-    padding-top: 30px; }
-    @media (max-width: 991px) {
-      #career-page h1 {
-        font-size: calc(14px + 1vw); } }
-  #career-page h2 {
-    font-family: "Bebas Neue", sans-serif;
-    color: #091a23;
-    font-weight: 400;
-    padding: 10px 0px;
-    display: block;
-    font-size: 35px;
-    text-transform: capitalize; }
-  #career-page p {
-    font-family: "Montserrat", sans-serif;
-    color: #262626;
-    font-size: 16px;
-    padding-bottom: 10px;
-    text-transform: uppercase;
-    line-height: 42px; }
-  #career-page .find-out-dark-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #003D7D;
-    width: 100%;
-    height: 6vh;
-    line-height: 50px;
-    border: #003D7D 0px solid;
-    color: white;
-    position: relative;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 0px;
-    -webkit-box-shadow: inset 0px 0px 0px 1px white;
-    -moz-box-shadow: inset 0px 0px 0px 1px white;
-    box-shadow: inset 0px 0px 0px 1px white;
-    padding: 25px 50px; }
-    @media (max-width: 991px) {
-      #career-page .find-out-dark-2 {
-        width: calc(30px + 50vw);
-        height: calc(12px + 3vh);
-        color: #13171B;
-        background-color: white; } }
-    #career-page .find-out-dark-2 span {
-      font-family: "Bebas Neue", sans-serif;
-      font-size: 30px; }
-  #career-page .padding-bot {
-    padding-bottom: calc(25px + 5vh); }
-
 .slider-area {
   min-height: 40vw; }
   .slider-area a:hover {
@@ -6437,7 +6254,7 @@ footer {
       line-height: 1.2;
       font-weight: 500;
       margin-bottom: 39px;
-      color: #75CEDD;
+      color: #003D7D;
       margin-bottom: 44px;
       display: inline-block; }
       @media (max-width: 575px) {
@@ -6971,7 +6788,7 @@ footer {
     border: 1px solid #003D7D;
     letter-spacing: 3px;
     text-align: center;
-    color: #75CEDD;
+    color: #003D7D;
     text-transform: uppercase;
     cursor: pointer; }
     #contact-about .boxed-btn:hover {
@@ -7225,7 +7042,7 @@ footer {
     border: 1px solid #003D7D;
     letter-spacing: 3px;
     text-align: center;
-    color: #75CEDD;
+    color: #003D7D;
     text-transform: uppercase;
     cursor: pointer; }
     #contact-more .boxed-btn:hover {
@@ -7465,7 +7282,7 @@ footer {
         font-weight: 700;
         line-height: 1.4; }
         .recent-news .news-post .blog-cap h4 a:hover {
-          color: #75CEDD; }
+          color: #003D7D; }
   .recent-news .news-post:hover .blog-cap {
     background: #75CEDD; }
     .recent-news .news-post:hover .blog-cap h4 a {

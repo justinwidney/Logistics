@@ -109,11 +109,12 @@
 }
 
 .background-image-entities {
-    background-color: $blue_dark;
-    height: 15vh;
+    background-image: url(/assets/img/gallery/logistics_overhead.jpg);
+    height: 75vh;
     background-repeat:no-repeat ;
     width: 100%;
     background-size: cover;
+    background-position-y: -10vh;
 
     @media #{$tab}{
         height: auto;
@@ -366,182 +367,83 @@ iframe {
     }
 }
 
-#timeline{
+#about-us{
 
-    //height: 400vh;
 
-    .padding-top{
-        padding-top: 10vh;
+    .history{
+        padding-bottom: 15vh;
     }
 
-    .padding-bot{
-        padding-bottom: 5vh;
+    .intro-line{
+        font-size: 16px;
+        padding-top: 15vh;
+        //margin: auto;
+        padding-left: 5px;
+        span{
+            padding-left: 10px;
+        }
+
     }
-   
+    .intro-line::before{
+        display: inline-block;
+        position: relative;
+        content: "";
+        border-bottom: 1px solid $theme-main-color;
+        width: 3rem;
+        //padding-right: 15px;
+        transform: translateY(-0.4rem);
+        top: 50%;
+    
+    }
 
-    .intro {
 
-      
+    h1{
+        font-family: $font_4;
+        font-weight: 100;
+        font-size: calc(16 + 1vw);
+        padding-bottom: 15px;
+        line-height: 55px;
+
+        span{
+            color: $theme-color;
+        }
+    }
+
+    p{
+        font-family: $font_7;
+        color: #121111;
+        font-size: calc(10px + 0.2vw);
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .header-text{
+        padding-bottom: 10vh;
+    }
+
+    .three-facts{
+
+        padding-bottom: 25vh;
+
         
-
-
-
         h1{
-            font-family: $font_4;
-           
-            font-weight: 100;
-            font-style:italic;
-            font-size: 45px;
+            font-family: $font_9;
+            padding-bottom: 0px;
         }
-    
         p{
-            color: #121111;
-            font-weight: 400;
+            font-family: $font_4;
             font-size: calc(10px + 0.2vw);
-            font-family: $font_8;
-            text-align: left;
+            color: black;
         }
-
-        .img-float-1{
-
-            position: relative;
-            left: 50%; 
-            transform: translateX(-50%);
-            margin-left: auto; 
-            margin-right: auto; 
-            top: 5%;
-            width: calc(50px + 18vw);
-            
+        i{
+            font-size: 5vw;
+            color: $theme-color;
         }
-
-        .img-float-2{
-            position: relative;
-            left: 50%; 
-            transform: translateX(-50%);
-            margin-left: auto; 
-            margin-right: auto; 
-            top: 35%;
-            width: calc(59px + 25vw);
-           
-        }
-
-        .img-float-3{
-
-            position:relative;
-            left: 50%; 
-            transform: translateX(-50%);
-            margin-left: auto; 
-            margin-right: auto; 
-        }
-
-    
-
-
     }
 
-    .mid-section {
 
-      
-    
-
-
-        h1{
-            font-family: $font_4;
-           
-            font-weight: 100;
-            font-style:italic;
-            font-size: 45px;
-        }
-    
-        p{
-            color: 121111;
-            font-weight: 400;
-            font-size: 16px;
-            font-family: $font_8;
-            text-align: left;
-        }
-
-        .img-float-1{
-
-            position: absolute;
-            left: 50%; 
-            transform: translateX(-50%);
-            top: 40%;
-            width: 12vw;
-            
-        }
-
-        .img-float-2{
-            position: absolute;
-            left: 50%; 
-            transform: translateX(-50%);
-            top: 15%;
-            width: 20vw;
-           
-        }
-
-        .img-float-3{
-
-            position:relative;
-            left: 50%; 
-            transform: translateX(-50%);
-            margin-left: auto; 
-            margin-right: auto; 
-        }
-
-    
-    }
-
-    .last-section {
-
-      
-    
-
-
-        h1{
-            font-family: $font_4;
-           
-            font-weight: 100;
-            font-style:italic;
-            font-size: 45px;
-        }
-    
-        p{
-            color: 121111;
-            font-weight: 400;
-            font-size: 16px;
-            font-family: $font_8;
-            text-align: left;
-        }
-
-        .img-float-1{
-
-            position: absolute;
-            left: 50%; 
-            transform: translateX(-50%);
-            top: 10%;
-            width: 12vw;
-            
-        }
-
-        .img-float-2{
-            position: absolute;
-            left: 50%; 
-            transform: translateX(-50%);
-            top: 10%;
-            width: 20vw;
-           
-        }
-
-        .img-float-3{
-
-            position:relative;
-            left: 50%; 
-            transform: translateX(-50%);
-            margin-left: auto; 
-            margin-right: auto; 
-        }
-
-    }
-    
 }

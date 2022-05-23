@@ -1451,20 +1451,79 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
 }
 
 #landtran-companies{
-    background-image: url(../img/hero/josiah-farrow-ucuOscdCaO4-unsplash.jpg);
+    background-image: url(../img/hero/nT4k2JDtwTQ.png);
     //min-height: 40vw;
     //height: 60vh;
     background-repeat:no-repeat ;
     width: 100%;
     background-size: cover;
-    padding-bottom: calc(50px + 10vh);
+    z-index: 5;
+    //padding-bottom: calc(50px + 10vh);
 
+    margin-bottom: calc(-50px + -5vh);
+
+    .padding-top{
+        padding-top: 25px;
+    }
+
+  
+
+
+    .find-out-dark-2{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $blue_light;
+        width: 100%;
+        height: 6vh;
+        line-height: 50px;
+        
+        border: $blue_light 0px solid ;
+       
+       
+        //margin: auto;
+        color: white;
+        position: relative;
+        font-family: $font_8;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 0px;
+        //-webkit-box-shadow:inset 0px 0px 0px 1px rgb(255, 255, 255);
+        //-moz-box-shadow:inset 0px 0px 0px 1px rgb(255, 255, 255);
+        //box-shadow:inset 0px 0px 0px 1px rgb(255, 255, 255);
+        
+        padding: 25px 50px;
     
+        
+
+        @media #{$tab}{
+            width: calc(30px + 50vw);
+            height: calc(12px + 3vh);
+
+            color: $black_normal;
+            background-color: white;
+
+         }
+    
+        //screen size
+         
+        span{
+            font-family: $font_9;
+            font-size: 30px;
+        }
+    
+    
+    
+    
+    
+    
+    }
 
     .transparent-bg{
         position: relative;
         top: calc(25px + 3vh);
-        background: rgba(0, 0, 0, 0.5);
+        //background: rgba(0, 0, 0, 0.5);
         padding: 35px 0px;
         
         h1{
@@ -1472,7 +1531,30 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
             font-family: $font_9;
             font-size: calc(12px + 2vw);
         }
+        h4{
+            font-family: $font_7;
+            color: white;
+            padding-bottom: 25px;
+        }
+
+        p{
+            color: white;
+            font-family: $font_9;
+            font-size: calc(12px + 0.5vw);
+        }
     }
+
+            i{
+                color: $theme-color;
+
+                background-color: #ffffff;
+                padding: 0px;
+                padding-right: 15px;
+                border-radius: 0%;
+                background-clip: content-box;
+            
+                font-size: 25px;
+            }
 
     .companies{
         
@@ -1717,6 +1799,50 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
         
     }
 
+    .three-services{
+
+        position: relative;
+        z-index: 5;
+
+ 
+        .box-top{
+            background-color: $theme-color;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        h1{
+            font-size: calc(12px + 0.3vw);
+            margin: auto;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .box-bottom{
+            background-color: white;
+            
+            img{
+                width: 100%;
+                height: 10vw;
+                padding: 10px;
+            }
+
+        }
+
+        .three-services-padding{
+            margin-right: 25px;
+            margin-left: 5px;
+
+        
+
+        }
+
+        .box-shadow-services{
+            -webkit-box-shadow: 0px 4px 8px 2px #000000; 
+            box-shadow: 0px 4px 8px 2px #000000;
+        }
+
+
+    }
+
 }
 
 .border-leftx {
@@ -1830,6 +1956,11 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
     //height: 10vh;
     border-left: #14397F 50px solid;
     border-bottom: #14397F 50px solid;
+    background-color: white;
+    position: relative;
+    z-index: 4  ;
+
+    padding-top: 25px;
 
     img{
         object-fit: cover;
@@ -1871,9 +2002,9 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
     }
 
     p{
-        font-family: $font_8;
+        font-family: $font_7;
         color: #262626;
-        font-size: 16px;
+        font-size: calc(10px + 0.5vw);
         padding-bottom: 10px;
         text-transform: uppercase;
         line-height: 42px;
