@@ -3,13 +3,67 @@
   { "use strict"
 
 
+  document.addEventListener("DOMContentLoaded", function() { 
+
+    console.log("Dom ready")
+  const button = document.querySelector(".mobile-menu-trigger");
+
+  button.addEventListener('click', event => {
+   $(".mobile-menu-container").addClass("menu-open");
+              e.stopPropagation();
+              console.log(button);
+  });
+
+  });
+
+
+
+  console.log("test");
+  var PUS = {};
+      /*==========================================
+              :: slicknav
+      ==========================================*/
+      PUS.slicknav = function () {
+          $("#main-menu").slicknav({
+              allowParentLinks: true,
+              prependTo: '#mobile-menu-wrap',
+              label: '',
+          });
+
+          $(".mobile-menu-trigger").on("click", function(e) {
+              $(".mobile-menu-container").addClass("menu-open");
+              e.stopPropagation();
+              console.log("test");
+          });
+
+          $(".mobile-menu-close").on("click", function(e) {
+              $(".mobile-menu-container").removeClass("menu-open");
+              e.stopPropagation();
+          });  
+      };
+      $(document).ready(function () {
+          PUS.slicknav();
+      });
 
   
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 6,
-    spaceBetween: 40,
+    slidesPerView: 2,
+    spaceBetween: 30,
     loop: true,
     freeMode: true,
+
+    breakpoints: {
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+
+      811: {
+        slidesPerView: 5,
+        spaceBetween: 40,
+      }
+    },
+
     autoplay:{
     
       pauseOnMouseEnter:true,
@@ -232,9 +286,6 @@ $(window).load( function() {
     console.log(header);
     console.log(icon);
 
-    icon.onclick = function () {
-      header.classList.toggle('menu-open');
-    }
 
 
  

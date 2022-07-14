@@ -10,6 +10,9 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
     background-color: white;
 
     padding-bottom: calc(45px + 7vh);
+    @media #{$tab}{
+        padding-bottom: calc(15px + 3vh);
+    }
 
     .icon-row{
         height: 18vh;
@@ -730,7 +733,8 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
       
                 @media #{$tab}{
       
-                  font-size: calc(14px + 1vw);
+                    font-size: calc(24px + 1.2vw);
+                    padding-bottom: 15px;
               }
 
             
@@ -741,12 +745,25 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
                 font-family: $font_8;
                 font-size: 16px;
                 color: black;
+
+             
+
             }
 
             i{
                 font-size: 40px;
                 text-align: center;
             }
+
+            @media #{$tab}{
+                p{
+                font-size: calc(10px + 0.3vw);
+                
+                }
+                i{
+                    font-size: calc(10px + 3vw);
+                }
+          }
 
             .vertical-center {
                 //min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
@@ -764,6 +781,9 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
                 height: 1px;
                 width: 100%;
                 padding-bottom: 25px;
+                @media #{$tab}{
+                    padding-bottom: 15px;
+                }
               }
         }
 
@@ -782,8 +802,9 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
       
                 @media #{$tab}{
       
-                  font-size: calc(14px + 1vw);
-              }
+                    font-size: calc(24px + 1.2vw);
+                    padding-bottom: 20px;
+                }
 
             
               padding-bottom: 30px;
@@ -803,7 +824,8 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
       
                 @media #{$tab}{
       
-                  font-size: calc(14px + 1vw);
+                  font-size: calc(24px + 1.2vw);
+                  padding-bottom: 10px;
               }
 
             
@@ -813,10 +835,17 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
             p{
                 font-family: $font_8;
                 color: black;
-                font-size: 16px;
+                font-size: calc(16px);
                 padding-bottom: 40px;
                 text-transform: uppercase;
                 line-height: 42px;
+
+                @media #{$tab}{
+                    font-size: calc(10px + 0.2vw);
+                    line-height: 26px;
+                    padding-bottom: 20px;
+                }
+
             }
 
                
@@ -849,11 +878,10 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
             
 
             @media #{$tab}{
-                width: calc(30px + 50vw);
+                width: calc(30px + 25vw);
                 height: calc(12px + 3vh);
 
-                color: $black_normal;
-                background-color: white;
+                
 
              }
         
@@ -1893,7 +1921,7 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
 
 
     @media #{$tab}{
-       height: calc(40vh + 25px);
+       height: calc(90vh + 25px);
     }
 
 
