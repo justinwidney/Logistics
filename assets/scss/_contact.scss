@@ -83,8 +83,9 @@
  
 
   @media #{$tab}{
-    height: 50px;
+    height: calc(5vw + 20px);
     background-position: 0px 0px;
+    
       }
 
 }

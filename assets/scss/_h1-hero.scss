@@ -142,39 +142,7 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
 
     }
 
-    .thirty-div{
-        height: 10vh;
-
-        @media #{$tab}{
-            display: none;
-         }
-
-    }
-    .five-div{
-        height: 10vh;
-    }
-    .t-bg{
-        background-color: transparent;
-
-
-         
-    }
-
-
-
-    .n-bg{
-        background: chocolate;
-    }    
-    .w-bg{
-        background-color: #fcfcfc !important;
-
-    }
-    .bl-bg{
-        background-color: $blue_light !important;
-    }
-    .bd-bg{
-        background-color: $blue_dark !important;
-    }
+    
 
 
     .box-shadow-pop{
@@ -729,12 +697,16 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
                 margin-bottom: 0px;
                 //letter-spacing: -3px;
                 padding-bottom: 55px;
-                padding-left: 40px;  
+                //padding-left: 40px;  
       
                 @media #{$tab}{
       
                     font-size: calc(24px + 1.2vw);
                     padding-bottom: 15px;
+              }
+
+              @media #{$small_mobile}{
+                  font-size: calc(30px + 2vw);
               }
 
             
@@ -875,23 +847,28 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
         
             transition: $transition;
         
-            
+            span{
+                font-family: $font_9;
+                font-size: 30px;
+            }
+        
 
             @media #{$tab}{
                 width: calc(30px + 25vw);
                 height: calc(12px + 3vh);
 
+                span{
+
+                font-size: calc(10px + 2vw);
+
+                }
                 
 
              }
         
             //screen size
              
-            span{
-                font-family: $font_9;
-                font-size: 30px;
-            }
-        
+          
         
         
         
@@ -1486,15 +1463,20 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
     width: 100%;
     background-size: cover;
     z-index: 5;
-    //padding-bottom: calc(50px + 10vh);
+    padding-bottom: calc(50px + 10vh);
 
-    margin-bottom: calc(-50px + -5vh);
+    margin-bottom: calc(-25px + -20vh);
 
     .padding-top{
         padding-top: 25px;
     }
 
-  
+    @media #{$tab}{
+        padding-bottom: calc(50px + 20vh);
+
+        margin-bottom: -25vh;
+
+    }
 
 
     .find-out-dark-2{
@@ -1525,14 +1507,6 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
     
         
 
-        @media #{$tab}{
-            width: calc(30px + 50vw);
-            height: calc(12px + 3vh);
-
-            color: $black_normal;
-            background-color: white;
-
-         }
     
         //screen size
          
@@ -1541,7 +1515,20 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
             font-size: 30px;
         }
     
-    
+        
+        @media #{$tab}{
+            width: calc(30px + 30vw);
+            height: calc(12px + 3vh);
+
+            padding: 15px 30px;
+
+            span{
+                font-size: calc(10px + 2vw);
+            }
+            //color: $black_normal;
+            //background-color: white;
+
+         }
     
     
     
@@ -1832,6 +1819,7 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
         position: relative;
         z-index: 5;
 
+        padding-top: 25px;
  
         .box-top{
             background-color: $theme-color;
@@ -1863,11 +1851,40 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
 
         }
 
+
+       
+        
+
         .box-shadow-services{
             -webkit-box-shadow: 0px 4px 8px 2px #000000; 
             box-shadow: 0px 4px 8px 2px #000000;
+            border-radius: 15px 15px 0px 0px;
         }
 
+
+        @media #{$tab}{
+            .three-services-padding{
+                margin-right: 0px;
+                margin-left: 0px;
+                padding-right: 22px;
+                padding-left: 22px;
+    
+                }
+
+            .box-bottom{
+
+                img{
+                    width: 100%;
+                    height: 15vw;
+                    padding: 10px;
+
+                    @media #{$small_mobile}{
+                        height: 20vw;
+                    }
+                }
+            }
+
+            }
 
     }
 
@@ -1922,6 +1939,12 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
 
     @media #{$tab}{
        height: calc(90vh + 25px);
+       h1{
+           font-size: calc(12px + 2vw);
+       }
+       h2{
+           font-size: calc(12px + 1vw);
+       }
     }
 
 
@@ -2007,13 +2030,19 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
         padding-bottom: 10px;
         padding-top: 30px;
 
-        @media #{$tab}{
-
-          font-size: calc(14px + 1vw);
-      }
-
+        
     
 
+    }
+    @media #{$tab}{
+
+        h1{
+            font-size: calc(14px + 1vw);
+            
+        }
+        img{
+            padding-top: 25px;
+        }
     }
 
     
@@ -2067,14 +2096,7 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
     
         
 
-        @media #{$tab}{
-            width: calc(30px + 50vw);
-            height: calc(12px + 3vh);
-
-            color: $black_normal;
-            background-color: white;
-
-         }
+      
     
         //screen size
          
@@ -2083,7 +2105,18 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
             font-size: 30px;
         }
     
-    
+        @media #{$tab}{
+            width: calc(30px + 50vw);
+            height: calc(12px + 3vh);
+            
+            span{
+                font-size: calc(12px + 2vw);
+            }
+            //color: $black_normal;
+            //background-color: white;
+
+
+         }
     
     
     
@@ -2094,6 +2127,12 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
         padding-bottom: calc(25px + 5vh);
     }
 
+    @media #{$tab}{
+    
+        border-left: #14397F calc(5vw + 20px) solid;
+        border-bottom: #14397F calc(5vw + 20px) solid;
+
+     }
 }
 
 

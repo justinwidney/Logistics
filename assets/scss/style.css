@@ -2053,7 +2053,7 @@ header {
     z-index: 1; }
     .header-area .main-header .main-menu ul li span {
       font-family: "Source Sans Pro", sans-serif;
-      color: #091a23;
+      color: #ffffff;
       font-weight: 400;
       padding: 39px 24px;
       display: block;
@@ -2067,7 +2067,7 @@ header {
       position: relative; }
     .header-area .main-header .main-menu ul li a {
       font-family: "Source Sans Pro", sans-serif;
-      color: #091a23;
+      color: #ffffff;
       font-weight: 400;
       padding: 39px 24px;
       display: block;
@@ -2228,6 +2228,8 @@ header {
       transition: all 0.3s ease-out 0s;
       text-transform: uppercase;
       position: relative; }
+    .header-area2 .main-header .main-menu .sub-menu a {
+      color: #f1f1f1; }
     .header-area2 .main-header .main-menu:hover > a {
       color: #003D7D; }
     .header-area2 .main-header .main-menu ul.submenu {
@@ -2264,6 +2266,8 @@ header {
           .header-area2 .main-header .main-menu ul.submenu > li > a:hover {
             color: #003D7D;
             background: none; }
+      .header-area2 .main-header .main-menu ul.submenu a {
+        color: #fff; }
 
 .header-area .main-menu ul ul.submenu > li > a:hover {
   padding-left: 13px !important; }
@@ -2468,7 +2472,7 @@ header {
   transition: .3s;
   visibility: hidden;
   opacity: 0;
-  background-color: #1e1916;
+  background-color: #003D7D;
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -2788,23 +2792,6 @@ header {
         height: 45%; } }
   #read-more .full-div {
     flex: 0; }
-  #read-more .thirty-div {
-    height: 10vh; }
-    @media (max-width: 991px) {
-      #read-more .thirty-div {
-        display: none; } }
-  #read-more .five-div {
-    height: 10vh; }
-  #read-more .t-bg {
-    background-color: transparent; }
-  #read-more .n-bg {
-    background: chocolate; }
-  #read-more .w-bg {
-    background-color: #fcfcfc !important; }
-  #read-more .bl-bg {
-    background-color: #003D7D !important; }
-  #read-more .bd-bg {
-    background-color: #080D27 !important; }
   #read-more .box-shadow-pop {
     -webkit-box-shadow: 5px 4px 6px 2px rgba(0, 0, 0, 0.51);
     box-shadow: 5px 4px 6px 2px rgba(0, 0, 0, 0.51);
@@ -3111,12 +3098,14 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 0px;
-    padding-bottom: 55px;
-    padding-left: 40px; }
+    padding-bottom: 55px; }
     @media (max-width: 991px) {
       #read-more .contact-area .colored-heading-dark {
         font-size: calc(24px + 1.2vw);
         padding-bottom: 15px; } }
+    @media (max-width: 576px) {
+      #read-more .contact-area .colored-heading-dark {
+        font-size: calc(30px + 2vw); } }
   #read-more .contact-area p {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
@@ -3198,13 +3187,15 @@ header {
     -moz-box-shadow: inset 0px 0px 0px 1px white;
     box-shadow: inset 0px 0px 0px 1px white;
     transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4); }
-    @media (max-width: 991px) {
-      #read-more .intro-area .find-out-dark-2 {
-        width: calc(30px + 25vw);
-        height: calc(12px + 3vh); } }
     #read-more .intro-area .find-out-dark-2 span {
       font-family: "Bebas Neue", sans-serif;
       font-size: 30px; }
+    @media (max-width: 991px) {
+      #read-more .intro-area .find-out-dark-2 {
+        width: calc(30px + 25vw);
+        height: calc(12px + 3vh); }
+        #read-more .intro-area .find-out-dark-2 span {
+          font-size: calc(10px + 2vw); } }
 
 #facts {
   background-image: url(/assets/img/gallery/truck_reduced.jpg);
@@ -3521,9 +3512,14 @@ header {
   width: 100%;
   background-size: cover;
   z-index: 5;
-  margin-bottom: calc(-50px + -5vh); }
+  padding-bottom: calc(50px + 10vh);
+  margin-bottom: calc(-25px + -20vh); }
   #landtran-companies .padding-top {
     padding-top: 25px; }
+  @media (max-width: 991px) {
+    #landtran-companies {
+      padding-bottom: calc(50px + 20vh);
+      margin-bottom: -25vh; } }
   #landtran-companies .find-out-dark-2 {
     display: flex;
     justify-content: center;
@@ -3540,15 +3536,16 @@ header {
     overflow: hidden;
     border-radius: 0px;
     padding: 25px 50px; }
-    @media (max-width: 991px) {
-      #landtran-companies .find-out-dark-2 {
-        width: calc(30px + 50vw);
-        height: calc(12px + 3vh);
-        color: #13171B;
-        background-color: white; } }
     #landtran-companies .find-out-dark-2 span {
       font-family: "Bebas Neue", sans-serif;
       font-size: 30px; }
+    @media (max-width: 991px) {
+      #landtran-companies .find-out-dark-2 {
+        width: calc(30px + 30vw);
+        height: calc(12px + 3vh);
+        padding: 15px 30px; }
+        #landtran-companies .find-out-dark-2 span {
+          font-size: calc(10px + 2vw); } }
   #landtran-companies .transparent-bg {
     position: relative;
     top: calc(25px + 3vh);
@@ -3699,7 +3696,8 @@ header {
     padding-right: calc(20px + 2vw); }
   #landtran-companies .three-services {
     position: relative;
-    z-index: 5; }
+    z-index: 5;
+    padding-top: 25px; }
     #landtran-companies .three-services .box-top {
       background-color: #003D7D;
       border-radius: 15px 15px 0px 0px; }
@@ -3719,7 +3717,21 @@ header {
       margin-left: 5px; }
     #landtran-companies .three-services .box-shadow-services {
       -webkit-box-shadow: 0px 4px 8px 2px #000000;
-      box-shadow: 0px 4px 8px 2px #000000; }
+      box-shadow: 0px 4px 8px 2px #000000;
+      border-radius: 15px 15px 0px 0px; }
+    @media (max-width: 991px) {
+      #landtran-companies .three-services .three-services-padding {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-right: 22px;
+        padding-left: 22px; }
+      #landtran-companies .three-services .box-bottom img {
+        width: 100%;
+        height: 15vw;
+        padding: 10px; } }
+  @media (max-width: 991px) and (max-width: 576px) {
+    #landtran-companies .three-services .box-bottom img {
+      height: 20vw; } }
 
 .border-leftx {
   border-left: 1px thick solid #ffffff !important;
@@ -3757,7 +3769,11 @@ header {
         margin-right: 25px; }
   @media (max-width: 991px) {
     .slider-height {
-      height: calc(90vh + 25px); } }
+      height: calc(90vh + 25px); }
+      .slider-height h1 {
+        font-size: calc(12px + 2vw); }
+      .slider-height h2 {
+        font-size: calc(12px + 1vw); } }
 
 .slider-height2 {
   min-height: 410px;
@@ -3821,9 +3837,11 @@ header {
     margin-bottom: 0px;
     padding-bottom: 10px;
     padding-top: 30px; }
-    @media (max-width: 991px) {
-      #career-page h1 {
-        font-size: calc(14px + 1vw); } }
+  @media (max-width: 991px) {
+    #career-page h1 {
+      font-size: calc(14px + 1vw); }
+    #career-page img {
+      padding-top: 25px; } }
   #career-page h2 {
     font-family: "Bebas Neue", sans-serif;
     color: #091a23;
@@ -3858,17 +3876,21 @@ header {
     -moz-box-shadow: inset 0px 0px 0px 1px white;
     box-shadow: inset 0px 0px 0px 1px white;
     padding: 25px 50px; }
-    @media (max-width: 991px) {
-      #career-page .find-out-dark-2 {
-        width: calc(30px + 50vw);
-        height: calc(12px + 3vh);
-        color: #13171B;
-        background-color: white; } }
     #career-page .find-out-dark-2 span {
       font-family: "Bebas Neue", sans-serif;
       font-size: 30px; }
+    @media (max-width: 991px) {
+      #career-page .find-out-dark-2 {
+        width: calc(30px + 50vw);
+        height: calc(12px + 3vh); }
+        #career-page .find-out-dark-2 span {
+          font-size: calc(12px + 2vw); } }
   #career-page .padding-bot {
     padding-bottom: calc(25px + 5vh); }
+  @media (max-width: 991px) {
+    #career-page {
+      border-left: #14397F calc(5vw + 20px) solid;
+      border-bottom: #14397F calc(5vw + 20px) solid; } }
 
 .slider-area {
   min-height: 40vw; }
@@ -6934,7 +6956,7 @@ footer {
           font-size: calc(12px + 0.5vw); } }
   @media (max-width: 991px) {
     #contact-us-mid {
-      height: 50px;
+      height: calc(5vw + 20px);
       background-position: 0px 0px; } }
 
 #contact-us-bottom {

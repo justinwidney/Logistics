@@ -99,7 +99,7 @@ header{
                     
                     span{
                         font-family: $font_7;
-                        color: #091a23;
+                        color: #ffffff;
                         font-weight: 400;
                         padding: 39px 24px;
                         display: block;
@@ -112,7 +112,7 @@ header{
 
                      a{
                         font-family: $font_7;
-                        color: #091a23;
+                        color: #ffffff;
                         font-weight: 400;
                         padding: 39px 24px;
                         display: block;
@@ -402,7 +402,11 @@ header{
                     }
 
               
-
+                    .sub-menu{
+                        a {
+                            color: #f1f1f1;
+                        }
+                    }
                  
 
 
@@ -457,6 +461,10 @@ header{
                             }
                         }
                     } 
+
+                    a {
+                        color: #fff;
+                    }
                 }
             
         }
@@ -722,7 +730,7 @@ top: 70%;
             .main-navigation ul ul li a{color: #ffffff; }
             /* Main Menu CSS End*/
             /* Submenu / Dropdown Menu CSS */
-            .main-navigation ul li ul {position: absolute; width: 250px; left: 0; top: 65px; z-index: 2; -webkit-transition: .3s; transition: .3s; visibility: hidden; opacity: 0; background-color: #1e1916; margin: 0; padding: 0; list-style: none; }
+            .main-navigation ul li ul {position: absolute; width: 250px; left: 0; top: 65px; z-index: 2; -webkit-transition: .3s; transition: .3s; visibility: hidden; opacity: 0; background-color: $theme-color; margin: 0; padding: 0; list-style: none; }
             .main-navigation ul li:hover > ul {opacity: 1; visibility: visible; }
             .main-navigation ul li ul li a {padding: 14px 20px; line-height: 26px; }
             .main-navigation ul li ul li {display: block; text-align: left; }
