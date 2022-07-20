@@ -232,7 +232,8 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
 
         .intro-area{
 
-            
+            padding-top: 25px;
+
             .colored-heading-dark{
                 font-family: $font_4;
                 color: #171717;
@@ -926,11 +927,11 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
         
     
         @media #{$tab}{
-           height: calc(35vh + 250px);
+           height: calc(50vh + 250px);
         }
 
         @media #{$small-mobile}{
-            height: calc(40vh + 150px);
+            height: calc(55vh + 150px);
             
             h1{
                 font-size: 45px;
@@ -940,6 +941,7 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
         img{
             width: 100%;
             object-fit: cover;
+            height: 35vh;
         }
     
     

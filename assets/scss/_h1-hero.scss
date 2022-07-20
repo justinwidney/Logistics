@@ -1602,6 +1602,10 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
 
         margin-bottom: -25vh;
 
+        @media #{$small-mobile}{
+            padding-bottom: calc(50px + 19vh);
+        }
+
     }
 
 
@@ -2334,8 +2338,8 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
 
     @media #{$tab}{
     
-        border-left: #14397F calc(5vw + 20px) solid;
-        border-bottom: #14397F calc(5vw + 20px) solid;
+        border-left: #14397F calc(3vw + 20px) solid;
+        border-bottom: #14397F calc(3vw + 20px) solid;
 
      }
 }
