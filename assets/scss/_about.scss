@@ -62,19 +62,7 @@
 
     }
 
-    .ten-div{
-        height: 50vh;
-    }
-    .five-div{
-        height: 20.6vh;
-    }
-    .w-bg{
-        background-color: #F8F8F8;
-        z-index: 1;
-    }
-    .bd-bg{
-        background-color: $blue_dark;
-    }
+    
     
     .no-margin{
         margin: -1px !important;
@@ -117,7 +105,7 @@
     background-position-y: -10vh;
 
     @media #{$tab}{
-        height: auto;
+        height: calc(50px + 40vh);
     }
 }
 }
@@ -383,6 +371,12 @@ iframe {
             padding-left: 10px;
         }
 
+        
+        @media #{$tab}{
+
+            padding-top: 3vh;
+        }
+
     }
     .intro-line::before{
         display: inline-block;
@@ -412,7 +406,7 @@ iframe {
     p{
         font-family: $font_7;
         color: #121111;
-        font-size: calc(10px + 0.2vw);
+        font-size: calc(11px + 0.2vw);
     }
 
     img{
@@ -433,6 +427,9 @@ iframe {
         h1{
             font-family: $font_9;
             padding-bottom: 0px;
+
+           
+    
         }
         p{
             font-family: $font_4;
@@ -443,6 +440,21 @@ iframe {
             font-size: 5vw;
             color: $theme-color;
         }
+
+        @media #{$tab}{
+
+            padding-bottom: 5vh;
+
+            h1{
+                font-size: calc(14px + 2vw);
+            }
+
+            i{
+                font-size: 10vw;
+            }
+           
+        }
+
     }
 
 
@@ -451,6 +463,8 @@ iframe {
 #timeline{
 
     //height: 400vh;
+
+    overflow-x: hidden;
 
     .padding-top{
         padding-top: 10vh;
@@ -493,6 +507,10 @@ iframe {
             margin-right: auto; 
             top: 5%;
             width: calc(50px + 18vw);
+
+            @media #{$small_mobile}{
+                display: none;
+             }
             
         }
 
@@ -504,6 +522,10 @@ iframe {
             margin-right: auto; 
             top: 35%;
             width: calc(59px + 25vw);
+
+            @media #{$small_mobile}{
+                display: none;
+             }
            
         }
 
@@ -514,6 +536,12 @@ iframe {
             transform: translateX(-50%);
             margin-left: auto; 
             margin-right: auto; 
+            width: 50%;
+
+            @media #{$small_mobile}{
+                width: 100%;
+            }
+
         }
 
     
@@ -536,9 +564,9 @@ iframe {
         }
     
         p{
-            color: 121111;
+            color: #121111;
             font-weight: 400;
-            font-size: 16px;
+            font-size: calc(10px + 0.2vw);
             font-family: $font_8;
             text-align: left;
         }
@@ -550,6 +578,10 @@ iframe {
             transform: translateX(-50%);
             top: 40%;
             width: 12vw;
+
+            @media #{$small_mobile}{
+               display: none;
+            }
             
         }
 
@@ -559,6 +591,10 @@ iframe {
             transform: translateX(-50%);
             top: 15%;
             width: 20vw;
+
+            @media #{$small_mobile}{
+                display: none;
+             }
            
         }
 
@@ -569,6 +605,11 @@ iframe {
             transform: translateX(-50%);
             margin-left: auto; 
             margin-right: auto; 
+            width: 50%;
+
+            @media #{$small_mobile}{
+                width: 100%;
+            }
         }
 
     
@@ -589,9 +630,9 @@ iframe {
         }
     
         p{
-            color: 121111;
+            color: #121111;
             font-weight: 400;
-            font-size: 16px;
+            font-size: calc(10px + 0.2vw);
             font-family: $font_8;
             text-align: left;
         }
@@ -603,6 +644,10 @@ iframe {
             transform: translateX(-50%);
             top: 10%;
             width: 12vw;
+
+            @media #{$small_mobile}{
+                display: none;
+             }
             
         }
 
@@ -612,6 +657,10 @@ iframe {
             transform: translateX(-50%);
             top: 10%;
             width: 20vw;
+
+            @media #{$small_mobile}{
+                display: none;
+             }
            
         }
 
@@ -622,6 +671,11 @@ iframe {
             transform: translateX(-50%);
             margin-left: auto; 
             margin-right: auto; 
+            width: 50%;
+
+            @media #{$small_mobile}{
+                width: 100%;
+            }
         }
 
     }

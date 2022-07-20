@@ -658,7 +658,7 @@
 
 
 .slider-height-dedicated-delivery {
-    background-image: url(../img/gallery/truck_reduced.jpg);
+    background-image: url(../img/services/dedicated-delivery.jpg);
     min-height: 40vw;
     height: 105vh;
     background-repeat:no-repeat ;
@@ -668,13 +668,146 @@
 
 
     @media #{$tab}{
-       height: calc(40vh + 25px);
+       height: calc(40vh + 175px);
     }
 
 
   
 }
 
+
+.slider-height-crossdock-and-warehousing {
+    background-image: url(../img/services/crossdock.jpg);
+    min-height: 40vw;
+    height: 105vh;
+    background-repeat:no-repeat ;
+    width: 100%;
+    background-size: cover;
+    background-position: 0px -100px;
+
+
+    @media #{$tab}{
+       height: calc(40vh + 175px);
+    }
+
+
+  
+}
+
+.slider-height-less-than-truckload {
+    background-image: url(../img/services/Less-than-truckload.jpg);
+    min-height: 40vw;
+    height: 105vh;
+    background-repeat:no-repeat ;
+    width: 100%;
+    background-size: cover;
+    background-position: 0px -100px;
+
+
+    @media #{$tab}{
+       height: calc(40vh + 175px);
+       background-position: -10vw 0px;
+
+       @media #{$small-mobile}{
+           background-position: -40vw;
+       }
+    }
+
+
+  
+}
+
+.slider-height-logistics {
+    background-image: url(../img/services/logistics.jpg);
+    min-height: 40vw;
+    height: 105vh;
+    background-repeat:no-repeat ;
+    width: 100%;
+    background-size: cover;
+    background-position: 0px -100px;
+
+
+    @media #{$tab}{
+       height: calc(40vh + 175px);
+       background-position: -10vw 0px;
+
+       @media #{$small-mobile}{
+           background-position: -40vw;
+       }
+    }
+
+
+  
+}
+
+.slider-height-oilfield-hauling {
+    background-image: url(../img/services/oilfield-hauling.jpg);
+    min-height: 40vw;
+    height: 105vh;
+    background-repeat:no-repeat ;
+    width: 100%;
+    background-size: cover;
+    background-position: 0px -100px;
+
+
+    @media #{$tab}{
+       height: calc(40vh + 175px);
+       background-position: -10vw 0px;
+
+       @media #{$small-mobile}{
+           background-position: -40vw;
+       }
+    }
+
+
+  
+}
+
+.slider-height-hotshot-transport{
+    background-image: url(../img/services/Hot-Shot.jpg);
+    min-height: 40vw;
+    height: 105vh;
+    background-repeat:no-repeat ;
+    width: 100%;
+    background-size: cover;
+    background-position: 0px -100px;
+
+
+    @media #{$tab}{
+       height: calc(40vh + 175px);
+       background-position: -10vw 0px;
+
+       @media #{$small-mobile}{
+           background-position: -40vw;
+       }
+    }
+
+
+  
+}
+
+.slider-height-hotshot-transport{
+    background-image: url(../img/services/intermodal.jpg);
+    min-height: 40vw;
+    height: 105vh;
+    background-repeat:no-repeat ;
+    width: 100%;
+    background-size: cover;
+    background-position: 0px -100px;
+
+
+    @media #{$tab}{
+       height: calc(40vh + 175px);
+       background-position: -10vw 0px;
+
+       @media #{$small-mobile}{
+           background-position: -40vw;
+       }
+    }
+
+
+  
+}
 
 #read-more{
 
@@ -699,7 +832,7 @@
       
                 @media #{$tab}{
       
-                  font-size: calc(14px + 1vw);
+                  font-size: calc(24px + 1vw);
               }
 
             
@@ -743,6 +876,10 @@
                 //padding-bottom: 40px;
                 //text-transform: uppercase;
                 //line-height: 42px;
+            }
+
+            ul{
+                padding-left: 15px;
             }
 
             .subtext{

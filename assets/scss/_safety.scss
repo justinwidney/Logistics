@@ -64,7 +64,14 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
     @media #{$tab}{
        margin-top: -10vh;
        height: auto;
+       padding-top: calc(15vh + 25px);
      }
+
+     @media #{$small-mobile}{
+        margin-top: -10vh;
+        height: auto;
+        padding-top: calc(5vh + 25px);
+      }
 
 
 
@@ -74,27 +81,7 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
 
     }
 
-    .thirty-div{
-        height: 10vh;
-
-        @media #{$tab}{
-            display: none;
-         }
-
-    }
-    .five-div{
-        height: 10vh;
-    }
-    .t-bg{
-        background-color: transparent;
-
-
-         
-    }
-
-
-
-
+  
     .box-shadow-pop{
         -webkit-box-shadow: 5px 4px 6px 2px rgba(0,0,0,0.51); 
         box-shadow: 5px 4px 6px 2px rgba(0,0,0,0.51);
@@ -939,8 +926,16 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
         
     
         @media #{$tab}{
-           height: calc(40vh + 25px);
+           height: calc(35vh + 250px);
         }
+
+        @media #{$small-mobile}{
+            height: calc(40vh + 150px);
+            
+            h1{
+                font-size: 45px;
+            }
+         }
 
         img{
             width: 100%;
